@@ -8,7 +8,6 @@ This project provides an environment for running and experimenting with Large La
 
 - Load LLaMA 3.1 and other LLMs locally via `mlx-lm`
 - Run inference in Jupyter Notebooks or VS Code/Cursor
-- Manage memory for heavy models (up to 70B)
 - Explore prompt engineering with chat-format inputs
 - Clean setup using Conda and `environment.yml`
 
@@ -28,8 +27,8 @@ This project provides an environment for running and experimenting with Large La
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/aditidatta/mlx-test.git
-cd mlx-test
+git clone https://github.com/aditidatta/mlx-playground.git
+cd mlx-playground
 ````
 
 ### 2. Create the Conda Environment
@@ -61,7 +60,7 @@ Launch Jupyter:
 jupyter lab
 ```
 
-Open `notebooks/mlx_test.ipynb` or create a new one. Sample code:
+Open `notebooks/mlx_demo.ipynb` or create a new one. Sample code:
 
 ```python
 from mlx_lm import load, generate
@@ -101,7 +100,7 @@ gc.collect()
 ```
 .
 ├── notebooks/
-│   └── mlx_test.ipynb
+│   └── mlx_demo.ipynb
 ├── environment.yml
 └── README.md
 ```
