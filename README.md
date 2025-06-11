@@ -6,6 +6,7 @@ This project provides an environment for running and experimenting with Large La
 
 ## ✅ Features
 
+- Install Miniconda and quickly setup the environment from the provided `environment.yml` file. (Instructions below...)
 - Load LLaMA 3.1 and other LLMs locally via `mlx-lm`
 - Run inference in Jupyter Notebooks or VS Code/Cursor
 - Explore prompt engineering with chat-format inputs
@@ -16,7 +17,7 @@ This project provides an environment for running and experimenting with Large La
 ## 💻 System Requirements
 
 - macOS (Apple Silicon, M2 Pro or higher recommended)
-- Miniconda / Conda
+- [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 - Python 3.10+
 - 64–256 GB unified memory (70B models require 80GB+ RAM)
 
@@ -24,12 +25,24 @@ This project provides an environment for running and experimenting with Large La
 
 ## 🛠️ Setup Instructions
 
+### Prerequisites
+```bash
+# Install Xcode CLI tools if not already installed
+xcode-select --install
+
+# Install Miniconda for ARM64
+mkdir -p ~/miniconda3
+curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm ~/miniconda3/miniconda.sh
+```
+
 ### 1. Clone the Repo
 
 ```bash
 git clone https://github.com/aditidatta/mlx-playground.git
 cd mlx-playground
-````
+```
 
 ### 2. Create the Conda Environment
 
